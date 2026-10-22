@@ -432,10 +432,9 @@ FodyWeavers.xsd
 # =============================================================
 
 # Datasets (downloaded via kaggle CLI) — never commit data
-data/
-*.zip
-*.tar
-*.tar.gz
+data/*
+!data/samples/
+!data/samples/**
 
 # Kaggle API credentials
 .kaggle/
