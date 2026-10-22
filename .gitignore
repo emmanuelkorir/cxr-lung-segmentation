@@ -426,3 +426,45 @@ FodyWeavers.xsd
 
 # Official VS Code C# Dev Kit Extension exclusion
 #*.lscache
+
+# =============================================================
+# Project: cxr-lung-segmentation
+# =============================================================
+
+# Datasets (downloaded via kaggle CLI) — never commit data
+data/
+*.zip
+*.tar
+*.tar.gz
+
+# Kaggle API credentials
+.kaggle/
+kaggle.json
+
+# Python
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Model artifacts / checkpoints
+models/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# uv (lock file IS committed; venv and cache are not)
+uv.lock.bak
+.uv-cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor misc
+.DS_Store
+.idea/
