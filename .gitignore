@@ -440,6 +440,9 @@ data/*
 .kaggle/
 kaggle.json
 
+# Kaggle kernel push artifacts (co-located metadata with personal slug)
+notebooks/kernel-metadata.json
+
 # Python
 .venv/
 venv/
